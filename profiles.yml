@@ -1,0 +1,12 @@
+dbt_workshop:
+  target: dev
+  outputs:
+    dev:
+      cancel_after_wait: kill
+      dbname: dbt_workshop_dev
+      host: 127.0.0.1
+      password: postgres
+      port: 9675
+      schema: dbt_workshop
+      type: postgres
+      user: postgres
